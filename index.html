@@ -1,8 +1,8 @@
 <!doctype html>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="">
-<html class="no-js lt-ie9 lt-ie8" lang="">
-<html class="no-js lt-ie9" lang="">
-<html class="no-js" lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <title>AcumenHub</title>
@@ -34,13 +34,14 @@
         <link rel="stylesheet" href="assets/css/responsive.css" />
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<!--Form embed-->
+
     </head>
 
     <body data-spy="scroll" data-target="#navbar-menu" data-offset="110">
 
 
         <!-- Preloader -->
-<!--
         <div id="loading">
             <div id="loading-center">
                 <div id="loading-center-absolute">
@@ -50,9 +51,8 @@
                     <div class="object" id="object_four"></div>
                 </div>
             </div>
-        </div>&lt;!&ndash;End off Preloader &ndash;&gt;
+        </div><!--End off Preloader -->
 
--->
 
         <sec class="culmn">
             <!--Home page style-->
@@ -63,31 +63,8 @@
                 <div class="top-search">
                     <div class="container">
                         <div class="input-group">
-<!--                            <span class="input-group-addon"><i class="fa fa-search"></i></span>-->
-<!--                            <input type="text" class="form-control" placeholder="Search">-->
-
-                    <!--        <div class="features_item">
-
-                                <ul class="list-inline m-top-10">
-
-                                    <li>-  <a href=""><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href=""><i class="fa fa-behance"></i></a></li>
-                                    <li><a href=""><i class="fa fa-dribbble"></i></a>  - </li>
-
-                                    <li class="f_item_text"><a href="">
-                                        <h6>+923013456789</h6>
-                                    </a>
-                                    </li>
-                                    <li><a href=""><li class="fa fa-map"></li>MAP</a></li>
-                                </ul>
-
-
-                            </div>
--->
-
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Search">
                             <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
 
                         </div>
@@ -99,7 +76,7 @@
                 <div class="container"> 
                     <div class="attr-nav">
                         <ul>
-<!--                            <li class="search"><a href="#"><i class="fa fa-blind"></i></a></li>-->
+<!--                            <li class="search"><a href="#"><i class="fa fa-search">Request Quote</i></a></li>-->
                         </ul>
                     </div>
 
@@ -110,7 +87,7 @@
                         </button>
                         <a class="navbar-brand" href="#home">
                             <img src="assets/images/amhlogo.png" class="logo" alt="">
-                            <!--<img src="assets/images/footer-logo.png" class="logo logo-scrolled" alt="">-->
+<!--                            <img src="assets/images/footer-logo.png" class="logo logo-scrolled" alt="">-->
                         </a>
 
                     </div>
@@ -145,7 +122,7 @@
                                 <div class="hello_slid">
                                     <div class="slid_item xs-text-center">
                                         <div class="col-sm-4">
-                                            <img src="assets/images/1234.png" alt="" />
+                                            <img style="" src="assets/images/1234.png" alt="" />
                                         </div>
                                         <div class="col-sm-8">
                                             <div class="home_text xs-m-top-30">
@@ -155,10 +132,14 @@
 
                                             </div>
 
-                                            <div class="home_btns m-top-40">
-                                                <a href="https://api.whatsapp.com/send?phone=+923454218006"  class="btn btn-primary m-top-20">+92 345 4218006</a>
+                                            <div class="home_btns m-top-0">
+
+                                                <a href="#" id="btnOpenForm" class="btn btn-primary m-top-20 ">Start A Project</a>
+
+
                                                 <a href="tel:+923454218006" class="btn btn-default m-top-20">Make a Call</a>
                                             </div>
+
                                         </div>
                                     </div><!-- End off slid item -->
 
@@ -169,6 +150,107 @@
                 </div><!--End off container -->
             </section> <!--End off Home Sections-->
 
+            <!--form-->
+
+<!--            <h1>Contact us Today!</h1>-->
+<!--            <button id="btnOpenForm">Open Form</button>-->
+
+            <div class="form-popup-bg">
+                <div class="form-container
+">
+                    <button id="btnCloseForm" class="close-button">X</button>
+                    <h1>Let's Connect!</h1>
+                    <p class="text-white">Wish to discuss a Project ?</p>
+<!--                    <form role="form" method="post" id="reused_form">-->
+                    <form action="">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="name"> Your Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="email"> Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="company-name"> Company Name:</label>
+                                <input type="text" class="form-control" id="company-name" name="company-name" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="mobile"> Mobile:</label>
+                                <input type="number" class="form-control" id="mobile" name="mobile" required>
+                            </div>
+                        </div>
+                       <!-- <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="message"> Message:</label>
+                                <textarea class="form-control" type="textarea" id="message" name="message"  ></textarea>
+                            </div>
+                        </div>
+-->
+                        <div class="row">
+<!--                            <p class="text-white " align="center">Choose the Service which you are interested ?</p>-->
+                            <div class="col-sm-6 form-group">
+                                <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Digital Marketing</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option3" >
+                                    <label class="form-check-label" for="inlineCheckbox2">Brand Development </label>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 form-group">
+                                <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox3">Web Services</label>
+                                </div>
+
+
+                            <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox4">SEO Services</label>
+                            </div>
+
+                            </div>
+
+                </div>
+
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button type="submit" class="btn btn-lg btn-default pull-right" >Send &rarr;</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!--       <form action="">
+
+
+                               <div class="form-group">
+                                   <label for="">Name</label>
+                                   <input type="text" class="form-control" />
+                               </div>
+                               <div class="form-group">
+                                   <label for="">Company Name</label>
+                                   <input class="form-control" type="text" />
+                               </div>
+                               <div class="form-group">
+                                   <label for="">E-Mail Address</label>
+                                   <input class="form-control" type="text" />
+                               </div>
+                               <div class="form-group">
+                                   <label for="">Phone Number</label>
+                                   <input class="form-control" type="text" />
+                               </div>
+                               <button type="submit" class="btn btn-default m-top-10" >Submit</button>
+                           </form>
+                    -->
+                </div>
+            </div>
 
 
             <!--Featured Section about-->
@@ -205,7 +287,7 @@
                                         <i class="icon icon-laptop2"></i>
                                     </div>
                                     <div class="f_item_text">
-                                        <h3>Web Servies</h3>
+                                        <h3>Web Services</h3>
                                         <p>Modern responsive design? We develop websites to ignite your business. DONE Right !</p>
                                     </div>
                                 </div>
@@ -373,9 +455,10 @@
 
                 </div><!--//container-->
             </div><!--//features-->
+            </section>
 
                 <!--Call to  action section-->
-                <section id="action" class="action bg-blue roomy-40">
+                <section id="actions" class="action bg-blue roomy-40">
                     <div class="container">
                         <div class="row">
                             <div class="maine_action">
@@ -396,7 +479,7 @@
                 </section>
 
 
-            </section>
+
 
 
 
@@ -826,7 +909,7 @@
                                                         <h5>Best Skill</h5>
                                                     </div>
 
-                                                    <div class="skill_bar sm-m-top-50 m-top-20"> 
+                                                    <div class="skill_bar sm-m-top-50 m-top-20">
                                                         <div class="teamskillbar clearfix m-top-20" data-percent="80%">
                                                             <h6 class="text-uppercase">Photoshop</h6>
                                                             <div class="teamskillbar-bar"></div>
@@ -900,7 +983,7 @@
                                                         <h5>Best Skill</h5>
                                                     </div>
 
-                                                    <div class="skill_bar sm-m-top-50 m-top-20"> 
+                                                    <div class="skill_bar sm-m-top-50 m-top-20">
                                                         <div class="teamskillbar clearfix m-top-20" data-percent="80%">
                                                             <h6 class="text-uppercase">Photoshop</h6>
                                                             <div class="teamskillbar-bar"></div>
@@ -974,7 +1057,7 @@
                                                         <h5>Best Skill</h5>
                                                     </div>
 
-                                                    <div class="skill_bar sm-m-top-50 m-top-20"> 
+                                                    <div class="skill_bar sm-m-top-50 m-top-20">
                                                         <div class="teamskillbar clearfix m-top-20" data-percent="80%">
                                                             <h6 class="text-uppercase">Photoshop</h6>
                                                             <div class="teamskillbar-bar"></div>
@@ -1079,8 +1162,6 @@
 
 
 
-
-
 <!--MAP-->
 
 
@@ -1088,7 +1169,7 @@
    <!--         <section id="test" class="test bg-black roomy-60 fix">
                 <div class="overlay"></div>
                 <div class="container">
-                    <div class="row">                        
+                    <div class="row">
                         <div class="main_test fix text-center">
 
                             <div class="col-md-12 col-sm-12 col-xs-12">
@@ -1199,6 +1280,8 @@
 
 
 
+
+<!--footer-->
             <footer id="contact" class="footer action-lage bg-black p-top-80">
                 <!--<div class="action-lage"></div>-->
                 <div class="container">
@@ -1207,7 +1290,7 @@
                             <div class="col-md-3">
                                 <div class="widget_item widget_about">
                                     <h5 class="text-white">About Us</h5>
-                                    <p class="m-top-20">Lorem ipsum dolor sit amet consec tetur adipiscing elit 
+                                    <p class="m-top-20">Lorem ipsum dolor sit amet consec tetur adipiscing elit
                                         nulla aliquet pretium nisi in cursus
                                         maecenas nec eleifen.</p>
                                     <p class="m-top-20">Lorem ipsum dolor sit amet consec tetur adipiscing elit
