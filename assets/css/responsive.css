@@ -53,7 +53,7 @@ Author URI: http://www.xpeedstudio.com
     }
 
     .home {
-        padding-top: 140px;
+        padding-top: 100px;
         padding-bottom: 200px;
     }
     .navbar-brand {
@@ -124,7 +124,7 @@ Author URI: http://www.xpeedstudio.com
         font-size: 85%;
     }
     .main_home .home_text h1{
-        font-size:28px;
+        font-size:40px;
     }
     .main_home .home_text h3{
         font-size:17px;
