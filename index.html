@@ -134,7 +134,7 @@
 
                                             <div class="home_btns m-top-0">
 
-                                                <a href="#" id="btnOpenForm" class="btn btn-primary m-top-20 ">Start A Project</a>
+                                                <a href="formindex.html" target="_blank"  class="btn btn-primary m-top-20 ">Start A Project</a>
 
 
                                                 <a href="tel:+923454218006" class="btn btn-default m-top-20">Make a Call</a>
@@ -155,13 +155,76 @@
 <!--            <h1>Contact us Today!</h1>-->
 <!--            <button id="btnOpenForm">Open Form</button>-->
 
-            <div class="form-popup-bg">
-                <div class="form-container
-">
+       <!--     <div class="form-popup-bg">
+                <div class="form-container">
                     <button id="btnCloseForm" class="close-button">X</button>
                     <h1>Let's Connect!</h1>
                     <p class="text-white">Wish to discuss a Project ?</p>
-<!--                    <form role="form" method="post" id="reused_form">-->
+
+                    <form role="form" method="post" id="reused_form">
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label>How do you rate your overall experience?</label>
+                                <p>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="experience" id="radio_experience" value="serviceone" >
+                                        servicesone
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="experience" id="radio_experience" value="servicestwo" >
+                                        servicestwo
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="experience" id="radio_experience" value="servicesthree" >
+                                        servicesthree
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="experience" id="radio_experience" value="servicesfour" >
+                                        servicesfour
+                                    </label>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="comments"> Little detail:</label>
+                                <textarea class="form-control" type="textarea" name="comments" id="comments" placeholder="detail of your project" maxlength="6000" rows="7"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="name"> Your Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="email"> Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="name"> Company Name:</label>
+                                <input type="text" class="form-control" id="firstname" name="firstname" maxlength="50">
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="email"> Phone:</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required maxlength="50">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button type="submit" class="btn btn-lg btn-primary btn-block" >Post </button>
+                            </div>
+                        </div>
+                    </form>
+
+
+
+
+
+
+                    &lt;!&ndash;                    <form role="form" method="post" id="reused_form">&ndash;&gt;
+&lt;!&ndash;
                     <form action="">
                         <div class="row">
                             <div class="col-sm-6 form-group">
@@ -183,15 +246,15 @@
                                 <input type="number" class="form-control" id="mobile" name="mobile" required>
                             </div>
                         </div>
-                       <!-- <div class="row">
+                       &lt;!&ndash; <div class="row">
                             <div class="col-sm-12 form-group">
                                 <label for="message"> Message:</label>
                                 <textarea class="form-control" type="textarea" id="message" name="message"  ></textarea>
                             </div>
                         </div>
--->
+&ndash;&gt;
                         <div class="row">
-<!--                            <p class="text-white " align="center">Choose the Service which you are interested ?</p>-->
+&lt;!&ndash;                            <p class="text-white " align="center">Choose the Service which you are interested ?</p>&ndash;&gt;
                             <div class="col-sm-6 form-group">
                                 <div class="form-check form-check-inline">
                                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -226,8 +289,9 @@
                             </div>
                         </div>
                     </form>
+&ndash;&gt;
 
-                    <!--       <form action="">
+                    &lt;!&ndash;       <form action="">
 
 
                                <div class="form-group">
@@ -248,9 +312,12 @@
                                </div>
                                <button type="submit" class="btn btn-default m-top-10" >Submit</button>
                            </form>
-                    -->
+                    &ndash;&gt;
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Your Request is send We will contact soon!</h3> </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your Request. </div>
+
                 </div>
-            </div>
+            </div>-->
 
 
             <!--Featured Section about-->
@@ -335,10 +402,8 @@
                     <div class="main_team roomy-40">
                         <div class="head_title text-center fix">
                             <h2 class="text-uppercase">Our Services</h2>
-                            <h5>I enjoy with my whole heart.</h5>
+                            <h5>Find the Best For Your Business !</h5>
                         </div>
-
-
 
                         <!-- Nav tabs -->
                         <ul class="feature-nav nav nav-pill nav-stacked text-left col-md-4 col-sm-6 col-xs-12 col-md-push-8 col-sm-push-6 col-xs-push-0" role="tablist">
@@ -347,13 +412,13 @@
                             <li class="features_item active" role="presentation">
                                 <div class="f_item_text">
                                     <a href="#feature-1" aria-controls="feature-1" role="tab" data-toggle="tab">
-                                       <h3><i class="fa fa-tablet"></i>&ensp;Social Media Marketing</h3></a></div>
+                                       <h3><i class="fa fa-tablet"></i> Social Media Marketing</h3></a></div>
                             </li>
 
                             <li class="features_item"  role="presentation" >
                                 <div class="f_item_text">
                                     <a href="#feature-2" aria-controls="feature-2" role="tab" data-toggle="tab">
-                                        <h3><i class="fa fa-pencil-square-o"></i>&ensp;Content Marketing</h3>
+                                        <h3><i class="fa fa-pencil-square-o"></i> Content Marketing</h3>
                                     </a>
                                 </div>
                             </li>
@@ -361,7 +426,7 @@
                             <li class="features_item"  role="presentation" >
                                 <div class="f_item_text">
                                     <a href="#feature-9" aria-controls="feature-9" role="tab" data-toggle="tab">
-                                        <h3><i class="fa fa-envelope"></i>&ensp;Email Marketing</h3>
+                                        <h3><i class="fa fa-envelope"></i> Email Marketing</h3>
                                     </a>
                                 </div>
                             </li>
@@ -407,7 +472,7 @@
                             <li class="features_item" role="presentation">
                                 <div class="f_item_text">
                                     <a href="#feature-6" aria-controls="feature-6" role="tab" data-toggle="tab">
-                                        <h3><i class="fa fa-laptop"></i>&ensp;Web Development</h3>
+                                        <h3><i class="fa fa-laptop"></i> Web Development</h3>
                                     </a>
                                 </div>
                             </li>
@@ -468,15 +533,13 @@
 
                         </div><!--//feature-content-->
 
-
-                    </div><!--//tabbed-area-->
-
+                        <!--//tabbed-area-->
                 </div><!--//container-->
             </div><!--//features-->
             </section>
 
                 <!--Call to  action section-->
-                <section id="actions" class="action bg-blue roomy-40">
+         <!--       <section id="actions" class="action bg-blue roomy-40">
                     <div class="container">
                         <div class="row">
                             <div class="maine_action">
@@ -495,7 +558,7 @@
                         </div>
                     </div>
                 </section>
-
+-->
 
 
 
@@ -515,13 +578,14 @@
                                         We work with our clients to identify business objectives and goals, and implement measurement tools that allow for the tracking and analysis of website traffic, conversion rates, keyword popularity, digital marketing campaign effectiveness, social media reach, and much more..</p>
 
                                     <ul class="text-white">
-                                        <li><i class="fa fa-arrow-circle-right"></i> Clean & Modern Design</li>
-                                        <li><i class="fa  fa-arrow-circle-right"></i> Fully Responsive</li>
-                                        <li><i class="fa  fa-arrow-circle-right"></i> Google Fonts</li>
+                                        <li><i class="fa fa-arrow-circle-right"></i>  One Step Forward</li>
+                                        <li><i class="fa  fa-arrow-circle-right"></i> Business Growth</li>
+                                        <li><i class="fa  fa-arrow-circle-right"></i> Makes Brands</li>
                                     </ul>
 
+
                                     <div class="business_btn m-top-50">
-                                        <a href="https://goo.gl/maps/GuhtAErWWCUWTiHw8" target="_blank" class="btn btn-default m-top-20">Find on Map</a>
+                                        <a href="#contact" data-toggle="scroll" class="btn btn-default m-top-20">Contact Us</a>
                                     </div>
 
                                 </div>
@@ -530,7 +594,7 @@
                             <div class="col-md-7">
                                 <div class="business_item">
                                     <div class="business_img">
-                                        <img src="assets/images/a.png" alt="" />
+                                        <img src="assets/images/business-img.png" alt="" />
 
                                     </div>
                                 </div>
@@ -548,7 +612,7 @@
                     <div class="main_product roomy-40">
                         <div class="head_title text-center fix">
                             <h2 class="text-uppercase text-black">Our Works</h2>
-                            <h5>We Create amazing Design</h5>
+                            <h5>It's not what we say, It's what we do.</h5>
                         </div>
 
                         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -894,24 +958,54 @@
 -->
 
 
+            <!--Brand Section-->
+
+            <section id="brand" class="brand fix roomy-40 bg-black">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_brand text-center">
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="brand_item">
+                                    <img src="assets/images/chamber.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="brand_item">
+                                    <img src="assets/images/fbr.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="brand_item xs-m-top-50">
+                                    <img src="assets/images/fbr.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="brand_item xs-m-top-50">
+                                    <img src="assets/images/pseb.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- End off Brand section -->
 
             <!--product section  our team-->
-            <section id="team" class="team bg-grey fix">
+            <section id="contact" class="contact bg-grey fix">
                 <div class="container">
                     <div class="main_team roomy-40">
                         <div class="head_title text-center fix">
                             <h2 class="text-uppercase">Contact Us</h2>
-                            <h5>Rabta kro balabala</h5>
+                            <h5>Want to find out how Acumen Hub can solve problems specific to your business? Let's Talk.. </h5>
                         </div>
 
-                        <div id="team-slid" class="carousel slide carousel-fade" data-ride="carousel">
+<!--                        <div id="team-slid" class="carousel slide carousel-fade" data-ride="carousel">-->
                             <!-- Indicators -->
-                            <ol class="carousel-indicators">
+                        <!--    <ol class="carousel-indicators">
                                 <li data-target="#team-slid" data-slide-to="0" class="active"></li>
                                 <li data-target="#team-slid" data-slide-to="1"></li>
                                 <li data-target="#team-slid" data-slide-to="2"></li>
                             </ol>
-
+-->
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
@@ -920,7 +1014,8 @@
                                             <div class="col-sm-4">
                                                 <div class="team_item team_skill">
                                                     <div class="team_author">
-                                                        <h4>Acumen Hub</h4>
+
+                                                        <h4 style="color: #f02f64"> Acumen <b style="color: #5499f6">Hub</b> </h4>
                                                         <p>little description</p>
                                                     </div>
 
@@ -956,29 +1051,34 @@
                                             <div class="col-sm-4">
                                                 <div class="team_item xs-m-top-30">
                                                     <div class="port_img">
-                                                        <img src="assets/images/contact-us-today-banner-new.png" alt="" />
+                                                        <img src="assets/images/contact.png" alt="" />
                                                     </div>
                                                 </div>
                                             </div><!-- End off col-sm-4 -->
 
                                             <div class="col-sm-4">
                                                 <div class="team_item team_content xs-m-top-30">
-                                                      <h5 class="fa fa-phone"> +92301 2345678 <br>+92301 2345678</h5>
-                                                    <a href="mailto:acumenhub@outlook.com"><p>acumenhub@outlook.com </p></a>
+                                                    <h5 class="text-uppercase"><strong>Contact Information</strong></h5>
+                                                      <h5 class="fa fa-phone"> &emsp;+92301 234 5678</h5><br>
+                                                      <h5 class="fa fa-tablet">&emsp; +92301 234 56789</h5>
+                                                    <a href="mailto:acumenhub@outlook.com"><h5 class="fa fa-envelope-open-o">&nbsp;&nbsp;acumenhub@outlook.com </h5></a>
 
-                                                    <h5 class="fa fa-map-marker"> Flat # 2, Second Floor Ali Tarar Heights <br>(51 H) Johar Town
+                                                    <h5 class="text-uppercase"><strong>Address</strong></h5>
+                                                    <h5 class="fa fa-map-marker"> &nbsp;&nbsp;Flat # 2, Second Floor Ali Tarar Heights
+                                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;(51 H) Johar Town
                                                         Lahore, Pakistan</h5>
+                                                    <div class="">
+                                                    <h5 class="text-uppercase"><strong>Office Hours</strong> </h5>
+                                                    <h5 class="fa fa-clock-o">&nbsp;&nbsp;&nbsp;Monday-Friday <br> &nbsp;&nbsp;&nbsp;&nbsp;09:00 AM - 06:00 PM </h5>
+                                                    </div>
 
-                                                    <h6>Office Hours </h6>
-                                                    <h6>Monday-Friday <br> &nbsp;09:00 AM - 06:00 PM </h6>
-
-                                                    <h5 class="m-top-10">- Site Map</h5>
-
-                                                    <div class="divider"></div>
-
+                                                    <h5 class="m-top-10 text-center text-primary"><i class="fa fa-map"></i>
+                                                        <a href="https://goo.gl/maps/GuhtAErWWCUWTiHw8" target="_blank"> Site Map</a></h5>
+<!--                                                    <div class="divider"></div>-->
                                                     <div class="team_socail">
-                                                        <h5>Get In Touch</h5>
-                                                        <ul class="list-inline m-top-20">
+                                                        <h5>Follow Us</h5>
+
+                                                        <ul class="list-inline m-top-20 ">
                                                             <li><a href=""><i class="fa fa-facebook"></i></a></li>
                                                             <li><a href=""><i class="fa fa-twitter"></i></a></li>
                                                             <li><a href=""><i class="fa fa-linkedin"></i></a></li>
@@ -1143,7 +1243,7 @@
                                     </div>
                                 </div>&lt;!&ndash; End off team &ndash;&gt;
                        -->
-                            </div>
+<!--                            </div>-->
 
                         </div>
                     </div><!-- End off row -->
@@ -1151,36 +1251,7 @@
             </section><!-- End off Product section -->
 
 
-            <!--Brand Section-->
 
-            <section id="brand" class="brand fix roomy-80">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_brand text-center">
-                            <div class="col-sm-3 col-xs-6">
-                                <div class="brand_item">
-                                    <img src="assets/images/chamber.png" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-xs-6">
-                                <div class="brand_item">
-                                    <img src="assets/images/fbr.png" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-xs-6">
-                                <div class="brand_item xs-m-top-50">
-                                    <img src="assets/images/fbr.png" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-xs-6">
-                                <div class="brand_item xs-m-top-50">
-                                    <img src="assets/images/pseb.png" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> <!-- End off Brand section -->
 
 
 
@@ -1293,7 +1364,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="action_btn text-left sm-text-center">
-                                    <a href="" class="btn btn-default">Discus Your Project</a>
+                                    <a href="" class="btn btn-default">Discuss Your Project</a>
                                 </div>
                             </div>
                         </div>
@@ -1307,7 +1378,7 @@
 
 
 <!--footer-->
-            <footer id="contact" class="footer action-lage bg-black p-top-80">
+            <footer id="footer" class="footer action-lage bg-black p-top-80">
                 <!--<div class="action-lage"></div>-->
                 <div class="container">
                     <div class="row">
