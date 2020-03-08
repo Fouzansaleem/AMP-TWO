@@ -21,6 +21,6 @@ $validator->field('comments')->maxLength(6000);
 
 
 
-$pp->sendEmailTo('fouzanvictor@gmail.com'); // ← Your email here
+$pp->sendEmailTo('acumenhub@outlook.com'); // ← Your email here
 
 echo $pp->process($_POST);
